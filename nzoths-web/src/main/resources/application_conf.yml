@@ -1,0 +1,9 @@
+spring:
+  name: Isea533
+  server.port: 8080
+  datasource:
+    name: nzthos
+    url: jdbc:mysql://www.wuxingx.top:3306/nzthos
+    username: root
+    password: zx377469484Z_X
+    type: com.alibaba.druid.pool.DruidDataSource
