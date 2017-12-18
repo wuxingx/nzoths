@@ -23,7 +23,7 @@ spring:
 #    maxOpenPreparedStatements: 20
 
   datasource:
-    url: jdbc:mysql://120.77.46.14:3306/nzoths?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://www.wuxingx.top:3306/nzoths?useUnicode=true&characterEncoding=utf8
     username: root
     password: zx377469484Z_X
     driver-class-name: com.mysql.jdbc.Driver
