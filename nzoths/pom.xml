@@ -10,6 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>../nzoths-web</module>
+        <module>../nzoths-service</module>
+        <module>../nzoths-persist</module>
+        <module>../nzoths-pojo</module>
     </modules>
 
     <parent>
