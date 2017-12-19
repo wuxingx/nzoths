@@ -17,6 +17,11 @@
             <artifactId>gmail-spring-boot-starter</artifactId>
             <version>1.0.5.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>com.nzoths</groupId>
+            <artifactId>nzoths-persist</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

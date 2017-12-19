@@ -27,3 +27,6 @@ spring:
     username: root
     password: zx377469484Z_X
     driver-class-name: com.mysql.jdbc.Driver
+  mybatis:
+    mapperLocations: classpath:mapper/*.xml
+    typeAliasesPackage: tk.mapper.model

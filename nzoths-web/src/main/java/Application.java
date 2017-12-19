@@ -28,7 +28,7 @@ public class Application {
         String driver = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql://www.wuxingx.top:3306/sys";
         String username = "root";
-        String password = "";
+        String password = "zx377469484Z_X";
         Connection conn = null;
         try {
             Class.forName(driver); //classLoader,加载对应驱动
