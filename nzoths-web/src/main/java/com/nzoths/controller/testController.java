@@ -1,32 +1,43 @@
 package com.nzoths.controller;
 
+import com.nzoths.service.ITestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.*;
 import java.util.Date;
 
-@RestController
+@RestController("/")
 public class testController {
 
-    @RequestMapping("/")
-    String home() {
-        return "Hello World!";
-    }
+    @Autowired
+    private ITestService testService;
+
 
     @RequestMapping("/now")
     String hehe() {
         return "现在时间：" + (new Date()).toLocaleString();
     }
 
+    @RequestMapping("getTest")
+    public String getTest(
+            @RequestParam(value = "name") String name,
+            @RequestParam(value = "password") String passowrd
+    ) {
+        testService.insert(name,passowrd);
+        return "1";
+    }
+
     @RequestMapping("/jdbc")
     String jdbc() {
-        this.getAll();
-        return "1";
+        Integer all = this.getAll();
+        return all + "";
     }
     private static Connection getConn() {
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://www.wuxingx.top:3306/sys";
+        String url = "jdbc:mysql://www.wuxingx.top:3306/nzoths";
         String username = "root";
         String password = "zx377469484Z_X";
         Connection conn = null;
@@ -43,7 +54,7 @@ public class testController {
 
     private static Integer getAll() {
         Connection conn = getConn();
-        String sql = "select * from sys_config";
+        String sql = "select * from tb_user";
         PreparedStatement pstmt;
         try {
             pstmt = (PreparedStatement)conn.prepareStatement(sql);

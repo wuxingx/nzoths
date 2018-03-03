@@ -1,9 +1,9 @@
+server:
+  port: 80
 spring:
-  name: Isea533
-  server.port: 80
   datasource:
-    name: nzthos
-    url: jdbc:mysql://www.wuxingx.top:3306/nzthos
+    name: nzoths
+    url: jdbc:mysql://www.wuxingx.top:3306/nzoths
     username: root
     password: zx377469484Z_X
     type: com.alibaba.druid.pool.DruidDataSource
@@ -21,11 +21,11 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
-  datasource:
-    url: jdbc:mysql://www.wuxingx.top:3306/nzoths?useUnicode=true&characterEncoding=utf8
-    username: root
-    password: zx377469484Z_X
-    driver-class-name: com.mysql.jdbc.Driver
+#  datasource:
+#    url: jdbc:mysql://www.wuxingx.top:3306/nzoths?useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: zx377469484Z_X
+#    driver-class-name: com.mysql.jdbc.Driver
   mybatis:
     mapperLocations: classpath:mapping/*.xml
     typeAliasesPackage: com.nzoths.pojo

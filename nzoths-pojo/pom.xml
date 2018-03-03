@@ -9,6 +9,9 @@
         <relativePath>../nzoths/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.nzoths</groupId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <artifactId>nzoths-pojo</artifactId>
 

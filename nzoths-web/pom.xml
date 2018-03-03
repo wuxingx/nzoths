@@ -11,14 +11,53 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>nzoths-web</artifactId>
-
+    <groupId>com.nzoths</groupId>
+    <version>1.0.0</version>
+    <packaging>war</packaging>
     <dependencies>
 
         <dependency>
             <groupId>com.nzoths</groupId>
             <artifactId>nzoths-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- 分页插件 -->
+
+
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.3.0.RELEASE</version>
+                <configuration><!-- 指定该Main Class为全局的唯一入口 -->
+                    <mainClass>com.nzoths.controller.Application</mainClass>
+                    <layout>ZIP</layout>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>
