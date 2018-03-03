@@ -26,12 +26,12 @@ spring:
 #    username: root
 #    password: zx377469484Z_X
 #    driver-class-name: com.mysql.jdbc.Driver
-  mybatis:
-    mapperLocations: classpath:mapping/*.xml
-    typeAliasesPackage: com.nzoths.pojo
+mybatis:
+  mapper-locations: /mapping/*.xml
+  type-aliases-package: com.nzoths.pojo
 #  pagehelper分页插件
-  pagehelper:
-      helperDialect: mysql
-      reasonable: true
-      supportMethodsArguments: true
-      params: count=countSql
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
