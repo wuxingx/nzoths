@@ -1,38 +1,37 @@
 spring:
   name: Isea533
   server.port: 80
-#  datasource:
-#    name: nzthos
-#    url: jdbc:mysql://www.wuxingx.top:3306/nzthos
-#    username: root
-#    password: zx377469484Z_X
-#    type: com.alibaba.druid.pool.DruidDataSource
-#    driver-class-name: com.mysql.jdbc.Driver
-#    filters: stat
-#    maxActive: 20
-#    initialSize: 1
-#    maxWait: 60000
-#    minIdle: 1
-#    timeBetweenEvictionRunsMillis: 60000
-#    minEvictableIdleTimeMillis: 300000
-#    validationQuery: select 'x'
-#    testWhileIdle: true
-#    testOnBorrow: false
-#    testOnReturn: false
-#    poolPreparedStatements: true
-#    maxOpenPreparedStatements: 20
-#
-#  datasource:
-#    url: jdbc:mysql://www.wuxingx.top:3306/nzoths?useUnicode=true&characterEncoding=utf8
-#    username: root
-#    password: zx377469484Z_X
-#    driver-class-name: com.mysql.jdbc.Driver
-#  mybatis:
-#    mapperLocations: classpath:mapping/*.xml
-#    typeAliasesPackage: com.nzoths.pojo
-  #pagehelper分页插件
-#  pagehelper:
-#      helperDialect: mysql
-#      reasonable: true
-#      supportMethodsArguments: true
-#      params: count=countSql
+  datasource:
+    name: nzthos
+    url: jdbc:mysql://www.wuxingx.top:3306/nzthos
+    username: root
+    password: zx377469484Z_X
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  datasource:
+    url: jdbc:mysql://www.wuxingx.top:3306/nzoths?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: zx377469484Z_X
+    driver-class-name: com.mysql.jdbc.Driver
+  mybatis:
+    mapperLocations: classpath:mapping/*.xml
+    typeAliasesPackage: com.nzoths.pojo
+#  pagehelper分页插件
+  pagehelper:
+      helperDialect: mysql
+      reasonable: true
+      supportMethodsArguments: true
+      params: count=countSql
