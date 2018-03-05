@@ -1,9 +1,13 @@
 server:
-  port: 80
+  port: 443
+  ssl:
+    key-store: /data/certificate/www.wuxingx.top.jks
+    key-store-password: at09y6qqb8wn
+nzoths.port: 80
 spring:
   datasource:
     name: nzoths
-    url: jdbc:mysql://www.wuxingx.top:3306/nzoths
+    url: jdbc:mysql://www.wuxingx.top:3306/nzoths?verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf8
     username: root
     password: zx377469484Z_X
     type: com.alibaba.druid.pool.DruidDataSource
