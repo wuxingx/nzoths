@@ -3,7 +3,7 @@ server:
   ssl:
     key-store: /data/certificate/www.wuxingx.top.jks
     key-store-password: at09y6qqb8wn
-nzoths.port: 80
+nzoths.port: 8080
 spring:
   datasource:
     name: nzoths
