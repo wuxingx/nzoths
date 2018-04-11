@@ -56,4 +56,12 @@ public class HttpsConfiguration {
         connector.setRedirectPort(443);
         return connector;
     }
+
+    public static void main(String[] args) {
+        int a=6;
+        if (a++ > 6) {
+            System.out.println(++a);
+        }else System.out.println(a--);
+
+    }
 }
